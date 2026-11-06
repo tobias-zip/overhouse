@@ -110,6 +110,8 @@ come from project-defaults and are kept in sync with it; change them there first
     slider), `useDismiss.ts` (closes popups on outside click or Escape),
     `OverloadNotice.tsx`, `SettingsPanel.tsx`. `App.tsx` lays out the top bar and the play bar.
   - `client/public/` — static assets (favicon).
+  - `tsconfig.base.json` — compiler options shared by all workspaces.
+  - `README.md` — short overview for someone returning after a while.
 - Rule and design requirements are supplied per task. Do not invent new rules,
   click actions or house shapes; ask.
 
@@ -335,6 +337,10 @@ checks that cannot be run and explain why.
 - Update documentation (`README.md`, this file) when setup, commands, structure, or
   game design changes. Do not repeat what config files already say, such as
   dependency versions.
+- Keep `README.md` a rough overview, not detailed documentation: what the project
+  is, its current state, how it roughly works, and open questions, so someone who
+  hasn't opened the project in a while knows what's going on without reading the
+  code. Details belong in the code, this file, or config files.
 - Summarize what changed, what was removed or simplified when relevant, what was
   verified, and any remaining limitations. Never claim a check ran when it did not.
 
